@@ -1,0 +1,12 @@
+{
+	"name": "Tomas Bulva",
+	"title": "Web Developer",
+	"description": "I'm a full stack software developer with over a decade of experience. A polygot with experience ranging from building server apps in Node.js, php, websites front end apps in Angular, Ember, jQuery to iphone apps in Objective-C and Swift. \n<br \/><br \/>\n I have worked for companies ranging from global corporations to local businesses and agencys such as Electronic Arts, Sony Entertainment, Accenture, National Geographic, mhdezign, c|change inc.",
+	"social": {
+		"label" : "Get in touch:",
+		"links": { 
+			"github": "https://github.com/tomasbulva",
+			"linkedin": "https://www.linkedin.com/pub/tomas-bulva/"
+		}
+	}
+}

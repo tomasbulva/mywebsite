@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Tomas Bulva</title>
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="css/tomasbulvacom.css">
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/semantic.js"></script>
+    <script src="js/tomasbulvacom.js"></script>
+
+  </head>
+  <body id="home" ng-controller="contentController">
+        <div class="ui card" style="margin: 20px auto;">
+          <div class="image main-head">
+            <img src="/img/t-sm-sq2-bw.png" class="passive">
+            <img src="/img/t-sm-sq2.png" class="active">
+          </div>
+          <div class="content">
+            <a class="header">{{ content.name }}</a>
+            <div class="meta">
+              <span class="date">{{ content.title }}</span>
+            </div>
+            <div class="description">
+              <p ng-bind-html="content.description"></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <b>{{ content.social.label }}</b>
+            <a ng-repeat="(name,link) in content.social.links" ng-href="{{ link }}" target="_blank"><i ng-class="[name,iconClassExt]"></i></a>
+          </div>
+        </div>
+  </body>
+</html>

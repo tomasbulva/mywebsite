@@ -1,0 +1,1 @@
+!function(n){"use strict";var t=n.module("app",["ngSanitize"]);t.controller("contentController",function(n,t){t.get("data.json").success(function(t){n.content=t}),n.iconClassExt="square icon"})}(window.angular);
